@@ -1,0 +1,20 @@
+8. Review Materi Overloading
+*Syntax
+public class TeknologiInformasi{
+        private String namaDosen;
+        private double gajiDosen;
+        private static final double BASE_GAJI=4000000;
+        private Date tglLahir;
+    
+        public TeknologiInformasi(String nama,double gaji, Date DoB) 
+                  this.namaDosen = nama;
+	this.gajiDosen = gaji;
+	this.tglLahir = DoB;
+        }
+        public TeknologiInformasi(String nama,double gaji) 
+                  this(nama,gaji,null);
+        }
+        public TeknologiInformasi(String nama,Date DoB) 
+                  this(nama,BASE_GAJI,DoB);
+        }
+*Pembahasan

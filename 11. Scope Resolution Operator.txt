@@ -1,0 +1,13 @@
+11.Review Materi Scope Resolution Operator (SRO)
+*Syntax
+class Handphone
+{
+    public static $jenisHandphone = 'nokia';	//static class variabel
+
+    public static function cetakJenisHandphone()	//static class function
+    {
+        return 'Jenis HP : '.self::$jenisHandphone;
+    }
+}
+*Pemahaman
+SRO yaitu tada yang memungkinkan akses ke statis, konstant properti dan metode kelas. ketika referensi item ari luar definisi kelas,maka menggunkan nama kelas,dan untuk PHP untuk referensi kelas menggunakan variabel yang mana nilai variabel tidak bisa menjadi kata kunci.

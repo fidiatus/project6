@@ -1,0 +1,19 @@
+Revie materi 1. Class vs Object
+* Syntax
+class User          //class
+{
+    public $email;          //object
+    public $password;
+    public function login()
+    {
+        return 'logging in ..';
+    }
+    public function logout()
+    {
+        return 'logging out ...';
+    }
+}
+* Pemahaman
+# Class digunakan untuk membuat object, dan berperan sebagai tipe data dari object. Class merupakan sarana untuk mengumpulkan data dan kumpulan Method yang mengoperasian kumpulan data tersebut.
+Class terdiri atas attribut, constructor, dan method. 
+#object adalah sebuah pointer,selama tidak bersifat static, programmer dapat melakukan sesuatu hanya terhadap object tertentudari kelas.

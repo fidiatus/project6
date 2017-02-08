@@ -1,0 +1,35 @@
+9. Review Materi Inheritance 
+*Syntax
+pulic class Penjualan  {			//class
+	int jumlah;
+	String baju,celana;
+     void inputData(String x,String y,int z) {
+	jumlah=z;
+	baju=x;
+	celana=y;
+     }
+    class Customer extends Penjualan {		//inheritance(pewarisan)
+      	String nama;
+	public void setNama(String nama) {	//method setter
+		this.nama=nama;
+	}
+	public String getNama() {		//method getter
+		return nama;
+	}
+	
+     void cetak() {
+	system.out.println("Nama Baju = ");
+	system.out.println("Nama Celana = ");
+	sytem.out.println("Jumlah =  ");
+     }
+     public statis void main(String[]args) {
+	Penjualan a= new Penjualan();		//memanggil class
+	a.inputData("Dress","Jeans","2");
+
+	String nama = JOptionPane.showInputDialog("nama cust= ");
+	Penjualan b= new Penjualan();
+	b.setNama(nama);
+	JOptionPane.showMessageDialog(null, "Nama Custumer : "+b.getNama());
+     }
+}
+*Pemahaman

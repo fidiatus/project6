@@ -19,4 +19,7 @@ echo '<br/>';
 var_dump($andri); // dumping data object andri
 echo '<br/>';
 var_dump($bowo); // dumping data object bowo
+
 *Pembahasan
+# Copying, merupakan syntax yang digunakan untuk mengcopy isi sebuah file/object kepada file/object lainnya dimana jika di set akan merubah value masing-asing object akan berubah.
+# cloning object, merupakan syntax yang fungsinya hampir sama dengan copying yang mendplikat,namun bedanya cloning tidak merubah kondisi objek yang clone layaknya copying.

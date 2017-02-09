@@ -1,10 +1,5 @@
 6. Review Materi Magic Methods
 *Syntax
-
-/**
- * 06 Magic Methods
- * Mempelajari beberapa magic method.
- */
 require 'app/User.php';
 require 'app/Validator.php';
 require 'app/Helper.php';
@@ -30,3 +25,19 @@ if ($validator->validate($data, $rules) == true) {
     var_dump($validator->getErrors());
 }
 *Pemahaman
+magic method ditandai dengan tanda double underscore("__") pada awal method yang mana method yang memiliki tanda ini merupakan method dengan fungsi khusus dan merupakan salah satu fitur dalam pemograman php berorientasi object,dan tidak boleh membuat function dengan nama ang sama dengan nama magic method. Berikut 15 magic method yang ada :
+#__construc(), merupakan method untuk membuat konstruktor sebuah class dan juga bisa membuat object sekaligus settingan propertinya.
+#__destruct(), merupakan method yang di pakai untuk memusnahkan properti pada object setelah exit atau unset object.
+#__call(),merupakan method yang digunakan saat memanggil method yang tidak dapat di akses di dalam object
+#__callStatic(), merupakan method yang digunakan saat memanggil method yang tidak dapat di akses di dalam static
+#__get(), merupakan method yang digunakan untuk membaca data dari properti yang tidak dapat diakses
+#__set(), merupkan method yan dgunakn untuk menulis data pada properti yang tidak dapat diakses
+#__isset(), merupakan method yang dipicu dengan memanggil method isset() atau empty() pada properti yang tidak dapat diakses.
+#__unset(),merupakan method yang dipicu dengan memanggil method unset() pada properti yang dapat di akses.
+#__sleep(), merupakan method yang dipanggil sat proses serialisasi object melalui function serilize()
+#__wakeup(), merupakan kebalikan method __sleep() yang digunakan saat proses serialisasi,maka method __wakeup() digunakan saat proses unrealisasi dengan function function unrealize(). 
+#__toString(),merupkan method yang memungkinkan sebuah class memutuskan bagaimana ia akan bereaksi bila diperlukan seperti string.
+#__invoke(),merupakn mthod yang dipakai ketika sebuah script mencoba menghubungi object sebagai function
+#__set_state(),merupakan method yang dipakai saat mengeksport class dengan function var_export(), yaitu function yang mengeksport properti dlam method kedalam rray('property'=>value,. . .).
+#__clone(),merupakan methdod yang dipakai untuk membuat salinan object. method __clone() dipilih dari pada memiliki dua variabel yang menunjuk ke data aktual yng sama
+#__debugInfo(), merupakan method yang dipanggil oleh function var __dump() ketika proses dumping object untuk memperoleh properti yang harus ditampilkan. jika method ini tidak didefinisikan pada object,maka semua sifat public, private dan protected akan ditampilkan.

@@ -1,12 +1,6 @@
 5. Review Materi Single Responsibility Principle
 *Syntax
 
-/**
- * dalam bagian sebelumnya kita melakukan validasi terhadap data dengan hardcode class user
- * di bagian kali ini kita akan memisahkan validasi ke dalam class tersendiri
- * sehingga ketika kita ingin menggunakan validasi lagi kita tidak perlu hardcode lagi
- * kemudian kita buat file Helper.
- */
 require 'app/User.php';
 require 'app/Validator.php';
 require 'app/Helper.php';
@@ -40,3 +34,5 @@ if ($validator->validate($data, $rules) === true) {
     var_dump($validator->getErrors());
 }
 *Pembahasan
+Single Responsibility Principal merupakan cara untuk mengidentifikasi class selama tahap desain aplikasi dan cara class dapat berkembang. pemisah resposibility dilakukan jika gambaran lengkap tentang cara kerja aplikasi dapat dipahami dengan baik.
+Di syntax ini adalah memisahkan validasi ke dalam class tersendiri sehingga ketika ingin menggunakan validasi lagi tidak perlu hardcode lagi kemudian buat file Helper.

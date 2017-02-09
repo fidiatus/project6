@@ -2,16 +2,11 @@
 *Syntax  Abstract
 /*
  * Object Abstract merupakan podnsa 
- * 
  * Prinsip :
  * - Semua method pada Object Abstract.
- * - 1 Class pengguna interface dapat mengimplementasikan banyak Object 
- *   inteface
- * - Class pengguna interface menggunakan keyword 'implements' untuk
- *   mengimplementasikan Object Interface nya. 
- *
+ * - 1 Class pengguna interface dapat mengimplementasikan banyak Object inteface
+ * - Class pengguna interface menggunakan keyword 'implements' untuk mengimplementasikan Object Interface nya. 
  * Jadi Class Kendaraan merupakan object inteface dari class Mobil, Motor etc.
- *
  */
 abstract class Kendaraan
 {
@@ -28,22 +23,14 @@ abstract class Kendaraan
     abstract public function nyalakanMesin();
 }
 
-
 *Syntax Interface
 /*
- * Object Interface merupakan kerangka dari sebuah class (bergantung 
- * class yang akan mempergunakan).
- * 
+ * Object Interface merupakan kerangka dari sebuah class (bergantung class yang akan mempergunakan).
  * Prinsip :
  * - Semua method pada Object Interface harus dengan visibility 'Public'.
- * - 1 Class pengguna interface dapat mengimplementasikan banyak Object 
- *   inteface
- * - Class pengguna interface menggunakan keyword 'implements' untuk
- *   mengimplementasikan Object Interface nya. 
- *
- *
+ * - 1 Class pengguna interface dapat mengimplementasikan banyak Object inteface
+ * - Class pengguna interface menggunakan keyword 'implements' untuk mengimplementasikan Object Interface nya. 
  * Jadi Class Buah merupakan object inteface dari class Jeruk, etc.
- *
  */
 interface Buah
 {
@@ -51,5 +38,27 @@ interface Buah
     public function ambilWarna();
 }
 *Pembahasan Abstract
-
+Abstrac merupakan class murni(tanpa object) dan tidak boleh memiliki object serta method-method yang abstrac harus disempurnakan oleh class turunannya melalui override dan abstrac biasanya merupakan root suatu structure class.
+Abstrac ini memiliki beberapa ketentuan seagai berikut ;
+# tidak dapat dibuat constructor yang abstrac
+# tidak dapat dibuat method yang static dan abstrac 
+# tidak diijinkan membuat method yang private dan abstrac
+bentuk umum dari abstrac yaitu :
+[modifier] abstract class NamaClass 
+{
+    //deklarasi atribut
+    //definisi/prototype method
+}
 *Pembahasan Interface
+interface adlah class yang paling abstrac, yang berisi daftar deklarasi method(method belum memiliki impleentasi). Berikut bentuk umum dari Interface :
+[modifier]interface class NamaInterface 
+{
+    //deklarasi konstant
+    //deklarasi method
+}   //modifier static tidak boleh digunakan dalam interface
+berikut Implementasi Interface  :
+[modifier] class NamaClass implements NamaInterface 
+{
+    //penggunaan konstanta
+    //implement method
+}

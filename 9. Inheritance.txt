@@ -33,3 +33,9 @@ pulic class Penjualan  {			//class
      }
 }
 *Pemahaman
+pada inheritance semua atribut dan method dari sutu kelas super dapat diwariskan ke sucss. dalam hirarki class,jika C merupakan turunan B, dan class B merupakan turuanan class A,maka otomatis attribut dan method A juga diwariskan ke class C.berikut bentuk umum Pewarisan :
+[modifier] class namaSubClass extend namaClassSuper 
+{
+	//class body	
+}
+tanpa inheritance,maka semua attribut dan methode yang pernah dibut dan dibutuhkan class lain, harus ditulis ulang seluruhnya. dengan inheritance,jika ingin memodifikasi suatu attribut atau method yng dimanfaatkan subClass,maka dilakukan modifikasi ttribut dan methode pada class supernya.
